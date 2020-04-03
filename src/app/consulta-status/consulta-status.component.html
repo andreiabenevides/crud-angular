@@ -1,0 +1,11 @@
+<section>
+  <p>Consulta por Status</p>
+  <div>
+    <button (click)="buscaStatus()">{{ status ? 'Não completas' : 'Completas' }}</button>
+  </div>
+  <div>
+    <ul class="item-lista">
+      <app-item-lista [tarefa]="tarefa" *ngFor="let tarefa of tarefas" (excluiu)="busca()"></app-item-lista>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+<div class="item-lista">
+  <li><a [routerLink]="['/detalhe', tarefa.id]">{{ tarefa.nome }}</a> - Completo:
+    <strong>{{ tarefa.completo ? 'Sim' : 'Não' }}</strong>
+  </li>
+  <li class="acao">
+    <app-status [tarefa]="tarefa"></app-status>
+    <app-excluir [tarefa]="tarefa" (excluiu)="excluiu.emit()"></app-excluir>
+  </li>
+</div>

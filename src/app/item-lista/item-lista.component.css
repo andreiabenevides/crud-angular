@@ -1,0 +1,17 @@
+.acao {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+li {
+  list-style: none;
+}
+
+.item-lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dfdfdf;
+}
